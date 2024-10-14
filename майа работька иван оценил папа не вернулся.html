@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html2 lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="card" onclick="show()">
+    <img src="popapedika/taro.png" alt="">
+    </div>
+    <div id='table'></div>
+    <div class="context">
+</body>
+<script>
+    let table = document.getElementById('table')
+    let card_name=['6.png','7.png','8.png','9.png','10.png','валет.png','дама.png','корол.png','туз.png']
+    function show(){
+        let card = document.createElement('div');
+        let number = Math.random() * 9;
+        number = Math.round(number)
+        console.log(number)
+        card.innerHTML = '<img src="popapedika/'+card_name[number]+'" alt="">'+'aboba';
+        table.append(card);
+    }
+</script>
+</html2
